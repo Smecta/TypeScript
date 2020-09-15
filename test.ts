@@ -1,11 +1,5 @@
-// let age: number;
-// age = 18;
-// console.log(age);
-// age = 19
-// console.log(age)
+let isVip:boolean = false
 
-let age: number = 20;
-
-console.log(age);
-
-console.log(2 - +"1")
+if(isVip){
+    console.log("是vip会员，可以观看完整电影")
+}
