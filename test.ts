@@ -35,11 +35,23 @@
 //   console.log('正在吃第'+i+'个包子');
 // }
 
-for (let i: number = 1; i <= 5; i++) {
-    if ( i === 3){
-        continue
-    }
+// for (let i: number = 1; i <= 5; i++) {
+//     if ( i === 3){
+//         continue
+//     }
 
-  console.log('正在吃第'+i+'个包子');
+//   console.log('正在吃第'+i+'个包子');
+// }
+
+
+let names:string[] = ['小明','小李']
+console.log(names[1])
+names[1] = '小段'
+names[names.length] = '小李'
+names[names.length] = '小孟'
+console.log(names)
+console.log(names.length)
+
+for(let i:number = 0 ; i < names.length; i++){
+  console.log(names[i])
 }
-
