@@ -12,10 +12,11 @@
                 "<node_internals>/**"
             ],
             "runtimeArgs": ["-r","ts-node/register"],
-            "program": "${file}",
-            "outFiles": [
-                "${workspaceFolder}/**/*.js"
-            ]
+            // "program": "${file}",
+            // "outFiles": [
+            //     "${workspaceFolder}/**/*.js"
+            // ]
+            "args": ["${workspaceFolder}/test.ts"]
         }
     ]
 }

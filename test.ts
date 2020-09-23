@@ -127,23 +127,85 @@
 // console.log(result)
 
 // 计算任意三角形面积并返回 公式 1/2 * 底 * 高
-function calcArea(a:number, h:number):number{
-  // let area:number = 1/2 * a * h
-  // return area
-  return 1/2 * a * h
-}
-console.log(calcArea(10,10))
+// function calcArea(a:number, h:number):number{
+//   // let area:number = 1/2 * a * h
+//   // return area
+//   return 1/2 * a * h
+// }
+// console.log(calcArea(10,10))
 
 //得到任意两个数中的最大值并返回
 
-function getMax(num1:number,num2:number):number{
-  // if(num1 > num2){
-  //   return num1
-  // }else{
-  //   return num2
-  // }
-  //三元表达式简化
-  return num1 > num2 ? num1 : num2
-}
+// function getMax(num1:number,num2:number):number{
+//   // if(num1 > num2){
+//   //   return num1
+//   // }else{
+//   //   return num2
+//   // }
+//   //三元表达式简化
+//   return num1 > num2 ? num1 : num2
+// }
 
-console.log(getMax(1,3))
+// console.log(getMax(1,3))
+
+
+// console.log('代码开始执行')
+// function work(){
+//   console.log('早上9点开始')
+//   console.log('晚上6点结束')
+// }
+
+// let count:number = 0 
+// count++
+// work()
+// console.log('代码结束')
+
+// function work(){
+//   console.log('早上9点开始')
+//   play()
+//   console.log('晚上6点结束')
+// }
+// function play(){
+//   console.log('早上9:30开始')
+//   console.log('晚上5:30结束')
+// }
+
+// work()
+
+//局部变量
+
+// function fn(){
+//   let num:number = 1
+//   console.log(num)
+// }
+// fn()
+// console.log(num)
+
+// 全局变量
+// let num:number = 1
+// function fn(){
+//   console.log(num)
+// }
+// fn()
+// console.log(num)
+
+// let person = {
+//   name:'周杰伦',
+//   age:20,
+//   sing:function(){
+//     console.log('我顶着大太阳')
+//   }
+// }
+
+let person:{
+  name:string;
+  age:number;
+  sing:() => void
+} = {
+  name:'周杰伦',
+  age:20,
+  sing:function(){
+    console.log('我顶着大太阳')
+  }
+}
+person.sing()
