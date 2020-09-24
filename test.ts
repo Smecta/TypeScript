@@ -197,15 +197,96 @@
 //   }
 // }
 
-let person:{
-  name:string;
-  age:number;
-  sing:() => void
-} = {
-  name:'周杰伦',
-  age:20,
-  sing:function(){
-    console.log('我顶着大太阳')
-  }
-}
-person.sing()
+// let person:{
+//   name:string;
+//   age:number;
+//   sing:() => void
+// } = {
+//   name:'周杰伦',
+//   age:20,
+//   sing:function(){
+//     console.log('我顶着大太阳')
+//   }
+// }
+// person.sing()
+
+// 创建接口
+// interface IPson{
+//   name:string;
+//   age:number;
+//   sing:() => void
+// }
+// 使用接口
+// let person:IPson= {
+//   name:'周杰伦',
+//   age:20,
+//   sing:function(){
+//     console.log('我顶着大太阳')
+//   }
+// }
+// person.sing()
+
+// interface IUser {
+//   name: string;
+//   height:number;
+//   sing:() => void;
+// }
+
+// let jay:IUser = {
+//   name:'周杰伦',
+//   height:175,
+//   sing:function(){
+//     console.log('我顶着大太阳')
+//   }
+// }
+
+// console.log(jay.name)
+// console.log(jay.height)
+// jay.sing()
+// jay.name = '周董'
+// console.log(jay.name)
+
+// 使用数组内置对象forEach()方法 遍历数组
+// let songs:string[] = ['七里香','简单爱','晴天','以父之名']
+// songs.forEach(function(item,index){
+//   console.log(`索引${index},歌曲元素${item}`)
+// })
+
+// 判断 数组 nums 中是否包含大于10的数字
+// let nums:number[] = [1,12,9,8,6]
+
+// let has:boolean = false
+
+// nums.forEach(function(num){
+//   console.log(num)
+//   if(num>10){
+//     has = true
+//   }
+// })
+
+// console.log(has)
+
+// // some()方法 遍历数组
+// let nums:number[] = [1,12,9,8,6]
+
+// // 用has 去接收 some的返回值
+// let has:boolean = nums.some(function(num){
+//   console.log(num)
+//   if(num > 10 ){
+//     return true
+//   }
+//   return false
+// })
+// // 判断 has的 真假返回相对应的提示信息
+// if(has){
+//   console.log('存在')
+// }else{
+//   console.log('不存在')
+// }
+
+// 类型推论
+// function sum (num:number,num2:number){
+//   return num+num2
+// }
+
+
